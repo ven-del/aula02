@@ -2,12 +2,12 @@
 
 :root{
     --button-color: #0066cc;
-    --primary-color: #007bff;
-    --secondary-color: #0052a3;
+    --primary-color: #0077ff;
+    --secondary-color: #042e81;
     --text-color-dark: #333;
     --text-color-light: #666;
     --white: #fff;
-    --border-radius: 12px;
+    --border-radius: 20px;
     --box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
 }
@@ -40,13 +40,15 @@ body {
 .left-panel {
     position: relative;
     width: 60%;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
     color: var(--white);
     display: flex;
     overflow: hidden;
     flex-direction: column;
     justify-content: center;
-    padding: 40px;
+    align-items: left;
+    padding: 20px;
+    padding-left: 90px;
 }
 
 .left-panel .container {
@@ -55,25 +57,24 @@ body {
 }
 
 .left-panel h1 {
-    font-size: 42px;
+    font-size: 28px;
     font-weight: 700;
-    margin-bottom: 16px;
+    margin-bottom: 6px;
 }
 
 .left-panel p {
-    font-size: 18px;
-    margin-bottom: 32px;
-    opacity: 0.8;
+    font-size: 12px;
+    margin-bottom: 20px;
 }
 
 .read-more {
-    background-color: rgba(255, 255, 255, 20%);
+    background-color: rgba(5, 117, 230, 100%);
     color: var(--white);
     border: none;
-    padding: 10px 26px;
+    padding: 5px 20px;
     border-radius: 30px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 9px;
     transition: var(--transition);
 }
 
@@ -84,21 +85,21 @@ body {
 .left-panel::before, .left-panel::after{
     content: '';
     position: absolute;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(5, 117, 230, 1);
     border-radius: 50%;
     z-index: 1;
 }
 
 .left-panel::before{
-    width: 500px;
-    height: 500px;
-    bottom: -350px;
-    left: -100px;
+    width: 360px;
+    height: 360px;
+    bottom: -190px;
+    left: -90px;
 }
 
 .left-panel::after{
-    width: 400px;
-    height: 400px;
-    bottom: -250px;
-    left: -590px;
+    width: 350px;
+    height: 360px;
+    bottom: -170px;
+    left: -140px;
 }
