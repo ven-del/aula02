@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Screen</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
@@ -17,25 +18,31 @@
             <div class="wave-decoration">
             </div>
         </div>
-        <div class="right=-panel">
+        <div class="right-panel">
             <div class="login-form">
-                <h2> Hello Again! </h2>
-                <p> Welcome Back </p>
+                <div class="login-message">
+                    <h2> Hello Again! </h2>
+                    <p> Welcome Back </p>
+                </div>
                 <div class="form-group">
                     <div class="input-container">
-                        <span class="icon">✉️</span>
+                        <span class="icon"><i class="fa-regular fa-envelope"></i>
+                        </span>
                         <input type="email" name="" placeholder="Email Address">
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="input-container">
-                        <span class="icon">🔒</span>
+                        <span class="icon"><i class="fas fa-lock"></i></span>
                         <input type="password" name="" placeholder="Password">
                     </div>
                 </div>
                 <button class="login-button">Login</button>
-                <a href="#" class="forgot-password">Forgot Password</a>
+                <div class="forgot-password"><a href="#">Forgot Password</a>
+                </div>
+                
         </div>
+    </div>
     </div>
 </body>
 </html>
